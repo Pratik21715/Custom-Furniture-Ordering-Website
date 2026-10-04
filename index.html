@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CraftNest - Custom Furniture</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header><div class="logo">CraftNest</div><nav><a href="#home">Home</a><a href="#products">Furniture</a><a href="#custom">Custom Order</a><a href="#orders">Orders</a></nav></header>
+<section id="home" class="hero"><div><h1>Furniture Made For You</h1><p>Choose, customize and order furniture that matches your space.</p><a class="btn" href="#products">Explore Furniture</a></div></section>
+<section id="products"><h2>Our Furniture</h2><div id="productGrid" class="grid"></div></section>
+<section id="custom"><h2>Custom Furniture Order</h2>
+<form id="orderForm"><input id="customer" placeholder="Full Name" required><input id="email" type="email" placeholder="Email" required>
+<select id="furniture"><option>Custom Sofa</option><option>Custom Bed</option><option>Custom Wardrobe</option><option>Custom Table</option><option>Custom TV Unit</option></select>
+<select id="material"><option>Solid Wood</option><option>Engineered Wood</option><option>Plywood</option><option>Wood + Fabric</option></select>
+<input id="color" placeholder="Color / Finish" required><input id="dimensions" placeholder="Dimensions (e.g. 6 x 3 ft)" required>
+<input id="quantity" type="number" min="1" value="1" required><input id="price" type="number" placeholder="Estimated Price (₹)" required>
+<button class="btn" type="submit">Place Order</button></form><p id="message"></p></section>
+<section id="orders"><h2>Recent Orders</h2><div id="ordersList"></div></section>
+<footer>© 2026 CraftNest Custom Furniture</footer>
+<script src="js/app.js"></script></body></html>
